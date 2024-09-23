@@ -17,15 +17,15 @@ try {
     $mail->isSMTP();                                          //Send using SMTP
     $mail->Host       = 'smtp.mail.ru';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                 //Enable SMTP authentication
-    $mail->Username   = '';                                   //SMTP username
-    $mail->Password   = '';                                   //SMTP password
+    $mail->Username   = 'zotpravcka@mail.ru';                                   //SMTP username
+    $mail->Password   = '123ert678iop_Matick';                                   //SMTP password
     $mail->SMTPSecure = 'TLS';                                //Enable implicit TLS encryption
     $mail->Port       = 465;                                  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
     $mail->setFrom('test user email adress', 'test user name');
     $mail->addAddress('test user email adress');     //Add a recipient
-    $body = '<p>Email: '.$_POST['email'].'</p>' . '<p>User comment: '.$_POST['comment'].'</p>';
+    $body = '<p>Email: '.$_POST['cyber.kids@mail.ru'].'</p>' . '<p>User comment: '.$_POST['comment'].'</p>';
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
