@@ -24,13 +24,13 @@ try {
 
     //Recipients
     $mail->setFrom('zotpravcka@mail.ru', 'cyberkids');
-    $mail->addAddress('cyber.kids@mail.ru');     //Add a recipient
+    $mail->addAddress('cyber.kids@mail.ru', "test user");     //Add a recipient
     $body = '<p>Email: '.$_POST['mail'].'</p>' . '<p>User comment: '.$_POST['comment'].'</p>';
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->CharSet = 'UTF-8';
-    $mail->Subject = 'Message';
+    $mail->Subject = 'Hi';
     $mail->Body    = $body;
 
     $mail->send();
