@@ -23,9 +23,9 @@ try {
     $mail->Port       = 465;                                  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('test user email adress', 'test user name');
-    $mail->addAddress('test user email adress');     //Add a recipient
-    $body = '<p>Email: '.$_POST['cyber.kids@mail.ru'].'</p>' . '<p>User comment: '.$_POST['comment'].'</p>';
+    $mail->setFrom('zotpravcka@mail.ru', 'cyberkids');
+    $mail->addAddress('cyber.kids@mail.ru');     //Add a recipient
+    $body = '<p>Email: '.$_POST['mail'].'</p>' . '<p>User comment: '.$_POST['comment'].'</p>';
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
